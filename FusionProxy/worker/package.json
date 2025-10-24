@@ -1,0 +1,17 @@
+{
+  "name": "fusion-proxy-worker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloudflare Worker backend for FusionProxy.",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  },
+  "dependencies": {
+    "@tomphttp/bare-server-node": "^2.0.6"
+  }
+}
