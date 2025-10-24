@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # Note: You must create your own KV namespace and add the appropriate IDs here.
 # Run `wrangler kv:namespace create SESSIONS` and paste the output below.
 kv_namespaces = [
-  { binding = "SESSIONS", id = "local_test_id", preview_id = "local_test_id" }
+  { binding = "SESSIONS", id = "1054959479ec49c58f7f0f693604591d", preview_id = "local_test_id" }
 ]
 
 [site]
