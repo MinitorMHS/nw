@@ -1,17 +1,20 @@
 {
-  "name": "fusion-proxy-worker",
+  "name": "fusion-proxy",
   "version": "0.1.0",
   "private": true,
-  "description": "Cloudflare Worker backend for FusionProxy.",
+  "description": "A secure web proxy for Cloudflare Workers.",
   "main": "src/index.js",
   "scripts": {
-    "deploy": "wrangler deploy",
-    "start": "wrangler dev"
+    "build": "webpack --mode=production",
+    "deploy": "npm run build && wrangler deploy",
+    "start": "npm run build && wrangler dev"
   },
   "devDependencies": {
-    "wrangler": "^4.45.0"
+    "wrangler": "^4.45.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "@tomphttp/bare-server-node": "^2.0.6"
+    "@tomphttp/bare-client": "^2.0.2"
   }
 }
