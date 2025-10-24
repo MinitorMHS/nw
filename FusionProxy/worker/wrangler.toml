@@ -1,0 +1,13 @@
+name = "fusion-proxy-worker"
+main = "src/index.js"
+compatibility_date = "2023-09-25"
+compatibility_flags = ["nodejs_compat"]
+
+# Note: You must create your own KV namespace and add the appropriate IDs here.
+# Run `wrangler kv:namespace create SESSIONS` and paste the output below.
+kv_namespaces = [
+  { binding = "SESSIONS", id = "local_test_id", preview_id = "local_test_id" }
+]
+
+[site]
+bucket = "./public"

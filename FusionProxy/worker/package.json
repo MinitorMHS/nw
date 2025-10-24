@@ -1,0 +1,20 @@
+{
+  "name": "fusion-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A secure web proxy for Cloudflare Workers.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "deploy": "npm run build && wrangler deploy",
+    "start": "npm run build && wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@tomphttp/bare-client": "^2.0.2"
+  }
+}
