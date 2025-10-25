@@ -25,7 +25,7 @@ function scanRequest(request, blockList) {
 
 self.__uv$config = {
   prefix: "/ir/service/",
-  bare: "https://backend.infrared.bomberfish.ca",
+  bare: "http://localhost:8787",
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,
   handler: "/ir/ir.handler.js",
