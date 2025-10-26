@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ESNext", "DOM"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["@cloudflare/workers-types", "vite/client"],
+    "paths": {
+      "~/*": ["./frontend/*"]
+    }
+  },
+  "include": ["src", "frontend"],
+  "exclude": ["node_modules", "dist"]
+}
